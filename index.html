@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+
+  <title>puzzle game</title>
+  <link rel = "stylesheet" href= "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src = "scriptpuzzle.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  <script> 
+
+
+
+
+    $(document).ready(function() {
+
+      $("button#hide_h2").on('click',function() {
+          $("h2").hide(500);
+
+        });
+
+          $("button#show_h2").on('click',function() {
+            $("h2").show(300);
+            $("h2").css("color","black");
+            $("h2").html("You must be kidding...");
+        });
+
+      });
+
+    </script>
+    </head>
+
+
+ <body>
+
+
+
+
+<!-- Main content -->
+
+  <h1>Welcome to my game!</h1>
+  <h2>Ta Da! Here is the question!</h2>
+
+
+
+
+
+  <br>
+
+
+
+  <button type="button" class="btn btn-default"onclick="ask_ABC();"> A * B + C = ?</button>
+  <button type="button" class="btn btn-info" id='hide_h2'>Try it!</button>
+  <button type="button" class="btn btn-primary" id='show_h2'>Not hard,right?</button>
+
+
+
+
+       <form id="myForm">
+        <div class="form-group" align= "center">
+        <label for="1st">Enter your A</label>
+        <input type="text" class="form-control" >
+        </div>
+        <div class="form-group" align = "center">
+        <label for="2nd">Enter your B</label>
+        <input type="text" class="form-control" >
+        </div>
+        <div class = "form-group" align = "center">
+        <label for = "3rd">Enter your C</label>
+        <input type = "text" class="form-control">
+        </div>
+         </form>
+
+         <p id = "demo">
+
+
+
+
+
+       <div class = "container">
+
+
+
+       <div class="alert alert-success alert-dismissible fade in text-center">
+         <strong>Success!</strong> You got it!
+       </div>
+
+
+      <P id="demo">
+      I know this is not hard, at least I made it...
+
+
+<address>Made by Renee<br>
+  11/10/2018.</address>
+
+  <style>
+   img {
+      border-radius: 50%; }
+    </style>
+
+  <img src = "puzzle.jpg" alt = "Think outside the box" width = "300" height = "100" align = "right" >
+
+
+</div>
+</body>
+</html>
